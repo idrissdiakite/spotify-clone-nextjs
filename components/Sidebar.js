@@ -9,7 +9,7 @@ import {
 export default function Sidebar() {
   return (
     <div className="text-gray-400 p-5 text-sm border-r border-gray-900">
-      <div className="space-y-2">
+      <div className="space-y-3">
         <button className="flex items-center space-x-2 hover:text-white">
           <HiHome className="h-6 w-6" />
           <p>Accueil</p>
@@ -23,8 +23,8 @@ export default function Sidebar() {
           <p>Bibliothèque</p>
         </button>
       </div>
-      <div className="space-y-2">
-        <button className="flex items-center space-x-2 hover:text-white mt-5">
+      <div className="space-y-3">
+        <button className="flex items-center space-x-2 hover:text-white mt-8">
           <HiOutlinePlus className="h-6 w-6" />
           <p>Créer une playlist</p>
         </button>
@@ -33,9 +33,32 @@ export default function Sidebar() {
           <p>Titres likés</p>
         </button>
       </div>
-      <hr className="border-t-[0.1px] border-gray-400 mt-5" />
+
+      <hr className="border-t-[0.1px] border-gray-400 mt-5 mb-5" />
 
       {/* Playlists */}
+      <div className="space-y-3">
+        <p className="hover:text-white cursor-pointer">Playlist...</p>
+        <p className="hover:text-white cursor-pointer">Playlist...</p>
+        <p className="hover:text-white cursor-pointer">Playlist...</p>
+        <p className="hover:text-white cursor-pointer">Playlist...</p>
+        <p className="hover:text-white cursor-pointer">Playlist...</p>
+        <p className="hover:text-white cursor-pointer">Playlist...</p>
+        <p className="hover:text-white cursor-pointer">Playlist...</p>
+        <p className="hover:text-white cursor-pointer">Playlist...</p>
+        <p className="hover:text-white cursor-pointer">Playlist...</p>
+        <p className="hover:text-white cursor-pointer">Playlist...</p>
+        <p className="hover:text-white cursor-pointer">Playlist...</p>
+        <p className="hover:text-white cursor-pointer">Playlist...</p>
+        <p className="hover:text-white cursor-pointer">Playlist...</p>
+        <p className="hover:text-white cursor-pointer">Playlist...</p>
+        <p className="hover:text-white cursor-pointer">Playlist...</p>
+        <p className="hover:text-white cursor-pointer">Playlist...</p>
+        <p className="hover:text-white cursor-pointer">Playlist...</p>
+        <p className="hover:text-white cursor-pointer">Playlist...</p>
+        <p className="hover:text-white cursor-pointer">Playlist...</p>
+        <p className="hover:text-white cursor-pointer">Playlist...</p>
+      </div>
     </div>
   );
 }
