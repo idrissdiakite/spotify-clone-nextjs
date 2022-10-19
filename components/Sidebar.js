@@ -11,7 +11,7 @@ export default function Sidebar() {
   const { data: session, status } = useSession();
   
   return (
-    <div className="text-gray-400 p-5 text-sm border-r border-gray-900 overflow-y-scroll h-screen ">
+    <div className="text-gray-400 p-5 text-sm border-r border-gray-900 overflow-y-scroll scrollbar-hide h-screen">
       <div className="space-y-3">
         <button className="flex items-center space-x-2 hover:text-white">
           <HiHome className="h-6 w-6" />
