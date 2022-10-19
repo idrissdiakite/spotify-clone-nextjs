@@ -5,8 +5,11 @@ import {
   HiOutlinePlus,
   HiHeart,
 } from "react-icons/hi";
+import { signOut, useSession } from "next-auth/react"
 
 export default function Sidebar() {
+  const { data: session, status } = useSession();
+  
   return (
     <div className="text-gray-400 p-5 text-sm border-r border-gray-900">
       <div className="space-y-3">
@@ -31,6 +34,9 @@ export default function Sidebar() {
         <button className="flex items-center space-x-2 hover:text-white">
           <HiHeart className="h-6 w-6" />
           <p>Titres likés</p>
+        </button>
+        <button onClick={() => signOut()} className="flex items-center space-x-2 hover:text-white">
+          <p>Se deconnecter</p>
         </button>
       </div>
 
