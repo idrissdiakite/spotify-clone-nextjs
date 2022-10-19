@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import Content from '../components/Content'
 import Sidebar from '../components/Sidebar'
 
 export default function Home() {
@@ -11,8 +11,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <main className="flex">
         <Sidebar />
+        <Content />
       </main>
     </div>
   )
