@@ -6,6 +6,7 @@ import { HiChevronDown } from "react-icons/hi";
 import { shuffle } from "lodash";
 import { playlistIdState, playlistState } from "../atoms/playlistAtom";
 import useSpotify from "../hooks/useSpotify";
+import Tracks from "./Tracks";
 
 const colors = [
   "from-blue-500",
