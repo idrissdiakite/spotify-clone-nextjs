@@ -62,7 +62,7 @@ export default function Content() {
         </div>
       </header>
       <section
-        className={`flex items-end space-x-7 bg-gradient-to-b to-black ${color} h-80 tex-white p-8`}
+        className={`flex items-end space-x-7 bg-gradient-to-b to-black ${color} h-80 p-8`}
       >
       <div className="lg:w-25">
         <Image
