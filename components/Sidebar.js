@@ -33,7 +33,7 @@ export default function Sidebar() {
   }, [session, spotifyApi]);
 
   return (
-    <div className="text-gray-400 p-5 text-xs lg:text-sm border-r border-gray-900 overflow-y-scroll scrollbar-hide h-screen min-w-[12rem] lg:min-w-[14rem]">
+    <div className="hidden md:inline text-gray-400 p-5 text-xs lg:text-sm border-r border-gray-900 overflow-y-scroll scrollbar-hide h-screen min-w-[12rem] lg:min-w-[14rem]hidden">
       <div className="space-y-3">
         <button className="flex items-center space-x-2 hover:text-white">
           <HiHome className="h-6 w-6" />
