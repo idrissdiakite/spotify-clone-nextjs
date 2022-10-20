@@ -1,5 +1,6 @@
 import Image from "next/image";
 import useSpotify from "../hooks/useSpotify";
+import { millisToMinutesAndSeconds } from "../lib/time";
 
 // get order and track from components/tracks
 export default function Song({ order, track }) {
@@ -25,7 +26,7 @@ export default function Song({ order, track }) {
       </div>
       <div className="flex items-center justify-between ml-auto md:ml-0">
         <p className="hidden md:inline">{track.album.name}</p>
-        <p>duration</p>
+        <p>{millisToMinutesAndSeconds(track.duration_ms)}</p>
       </div>
     </div>
   );
