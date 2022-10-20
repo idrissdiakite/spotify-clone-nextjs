@@ -13,6 +13,10 @@ export default function Sidebar() {
   const spotifyApi = useSpotify();
   const { data: session, status } = useSession();
   const [playlists, setPlaylists] = useState([]);
+  const [playlistId, setPlaylistId] = useState(null);
+
+  // when we click on a playlist, we store his id in playlistId
+  console.log("Playlist id: ", playlistId);
 
   useEffect(() => {
     // if aceessToken is set
@@ -63,7 +67,7 @@ export default function Sidebar() {
       {/* Playlists */}
       <div className="space-y-3">
       {playlists.map((playlist) => (
-        <p key={playlist.id} className="hover:text-white cursor-pointer">{playlist.name}</p>
+        <p key={playlist.id} onClick={() => setPlaylistId(playlist.id)} className="hover:text-white cursor-pointer">{playlist.name}</p>
       ))}
       </div>
     </div>
