@@ -1,9 +1,7 @@
 import Image from 'next/image'
 import { useSession } from "next-auth/react";
 import { useEffect, useState } from 'react';
-import {
-  HiChevronDown,
-} from "react-icons/hi";
+import { HiChevronDown } from "react-icons/hi";
 import { shuffle } from "lodash"
 
 const colors = [
