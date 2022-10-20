@@ -1,8 +1,10 @@
 import Image from 'next/image'
 import { useSession } from "next-auth/react";
 import { useEffect, useState } from 'react';
+import { useRecoilValue } from "recoil";
 import { HiChevronDown } from "react-icons/hi";
 import { shuffle } from "lodash"
+import { PlaylistIdState } from '../atoms/playlistAtom';
 
 const colors = [
   "from-blue-500",
@@ -18,11 +20,13 @@ const colors = [
 export default function Content() {
   const { data: session } = useSession();
   const [color, setColor] = useState(null);
+  const playlistId = useRecoilValue(PlaylistIdState); // Read only version
+  // const [playlistId, setPlaylistId] = useRecoilState(PlaylistIdState);
 
   useEffect(() => {
     // shuffle array of colors and choose one color 
     setColor(shuffle(colors).pop());
-  }, [])
+  }, [playlistId])
 
   return (
     <div className="flex-grow">
