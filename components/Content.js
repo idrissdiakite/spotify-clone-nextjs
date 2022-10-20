@@ -43,8 +43,10 @@ export default function Content() {
     }
   }, [session, spotifyApi, playlistId, setPlaylist]);
 
+  console.log(playlist)
+
   return (
-    <div className="flex-grow">
+    <div className="flex-grow text-s lg:text-sm">
       <header className="absolute top-5 right-8">
         <div className="flex items-center bg-black text-white space-x-3 opacity-90 hover:opacity-80 cursor-pointer rounded-full p-1 pr-2">
           <Image
@@ -62,6 +64,7 @@ export default function Content() {
       <section
         className={`flex items-end space-x-7 bg-gradient-to-b to-black ${color} h-80 tex-white p-8`}
       >
+      <div className="lg:w-25">
         <Image
             className="w-44 h-44"
             src={playlist?.images?.[0]?.url}
@@ -71,9 +74,11 @@ export default function Content() {
             priority
             alt="Logo"
           />
+      </div>
           <div className="text-white">
             <p>PLAYLIST</p>
             <h1 className="text-2xl md:text-3xl xl:text-5xl font-bold">{playlist?.name}</h1>
+            <p className="text-xs md:text-base">{playlist?.description}</p>
           </div>
       </section>
     </div>
