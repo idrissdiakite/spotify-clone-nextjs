@@ -81,6 +81,7 @@ export default function Content() {
             <p className="text-xs md:text-base">{playlist?.description}</p>
           </div>
       </section>
+      <Tracks />
     </div>
   );
 }
