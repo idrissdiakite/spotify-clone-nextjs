@@ -16,7 +16,7 @@ export default function Sidebar() {
   const [playlistId, setPlaylistId] = useState(null);
 
   // when we click on a playlist, we store his id in playlistId
-  console.log("Playlist id: ", playlistId);
+  // console.log("Playlist id: ", playlistId);
 
   useEffect(() => {
     // if aceessToken is set
