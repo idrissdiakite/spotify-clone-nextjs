@@ -7,13 +7,16 @@ import {
 } from "react-icons/hi";
 import { signOut, useSession } from "next-auth/react";
 import { useState, useEffect } from "react";
+import { PlaylistIdState } from "../atoms/playlistAtom";
+import { useRecoilState } from "recoil";
 import useSpotify from "../hooks/useSpotify";
 
 export default function Sidebar() {
   const spotifyApi = useSpotify();
   const { data: session, status } = useSession();
   const [playlists, setPlaylists] = useState([]);
-  const [playlistId, setPlaylistId] = useState(null);
+  // thx to useRecoilState we can use playlistId globally - see atoms/playlistAtom.js
+  const [playlistId, setPlaylistId] = useRecoilState(PlaylistIdState);
 
   // when we click on a playlist, we store his id in playlistId
   // console.log("Playlist id: ", playlistId);
