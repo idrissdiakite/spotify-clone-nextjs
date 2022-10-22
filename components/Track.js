@@ -1,14 +1,24 @@
 import Image from "next/image";
 import useSpotify from "../hooks/useSpotify";
+import { useRecoilState } from "recoil";
+import { currentTrackIdState, isPlayingState } from "../atoms/trackAtom";
 import { millisToMinutesAndSeconds } from "../lib/time";
 
-// get order and track from components/tracks
-export default function Song({ order, track }) {
+export default function Song({ order, track }) { // get order and track from components/tracks
   const spotifyApi = useSpotify();
-  console.log(track);
+  const [currentTrackId, setCurrentTrackId] = useRecoilState(currentTrackIdState);
+  const [isPlaying, setIsPlaying] = useRecoilState(isPlayingState);
+
+  const playTrack = () => {
+    setCurrentTrackId(track.id);
+    setIsPlaying(true);
+    spotifyApi.play({uris: [track.uri],
+    });
+  };
+
 
   return (
-    <div className="grid grid-cols-2 text-gray-400 hover:text-white hover:bg-gray-900 py-4 px-5 cursor-pointer">
+    <div onClick={playTrack} className="grid grid-cols-2 text-gray-400 hover:text-white hover:bg-gray-900 py-4 px-5 cursor-pointer">
       <div className="flex items-center space-x-4">
         <p className="mr-4">{order + 1}</p>
         <Image

@@ -42,8 +42,7 @@ export default function Content() {
         .catch((err) => console.log("Something went wrong", err));
     }
   }, [session, spotifyApi, playlistId, setPlaylist]);
-
-  console.log(playlist);
+     // console.log(playlist);
 
   return (
     <div className="flex-grow text-s lg:text-sm h-screen overflow-y-scroll">
