@@ -13,7 +13,7 @@ export default function useTrackInfo() {
 
   useEffect(() => {
     const fetchTrackInfo = async () => {
-      if (currentTrackId) {
+      if (currentTrackId != "null") {
         const trackInfo = await fetch(
           `https://api.spotify.com/v1/tracks/${currentTrackId}`,
           {
