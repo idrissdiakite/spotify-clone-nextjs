@@ -57,12 +57,6 @@ export default function Sidebar() {
           <HiHeart className="h-6 w-6" />
           <p>Titres likés</p>
         </button>
-        <button
-          onClick={() => signOut()}
-          className="flex items-center space-x-2 hover:text-white"
-        >
-          <p>Se deconnecter</p>
-        </button>
       </div>
 
       <hr className="border-t-[0.1px] border-gray-400 mt-5 mb-5" />
