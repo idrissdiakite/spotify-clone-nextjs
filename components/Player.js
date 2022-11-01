@@ -38,7 +38,7 @@ export default function Player() {
   // }, [currentTrackId, spotifyApi, session]);
 
   return (
-    <div className="bg-gradient-to-b from-black to-gray-900 h-35 p-5 text-white">
+    <div className="bg-gradient-to-b from-black to-gray-900 h-35 p-5 grid grid-cols-3 text-xs md:text-base text-white">
       {/* LEFT/COVER */}
       {/* Show player only if track is defined */}
       <div className={track ? "flex items-center space-x-5" : ""}>
@@ -52,9 +52,11 @@ export default function Player() {
         />
         <div>
           <h3>{track?.name}</h3>
-          <p>{track?.artists?.[0]?.name}</p>
+          <p className="text-gray-400">{track?.artists?.[0]?.name}</p>
         </div>
       </div>
+      {/* MIDDLE/PLAY-PAUSE */}
+
     </div>
   );
 }
