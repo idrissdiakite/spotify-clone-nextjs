@@ -44,7 +44,7 @@ export default function Player() {
   // }, [currentTrackId, spotifyApi, session]);
 
   return (
-    <div className="bg-gradient-to-b from-black to-gray-900 h-35 p-5 grid grid-cols-3 text-xs md:text-base text-white">
+    <div className="bg-gradient-to-b from-black to-gray-900 h-35 px-2 md:px-8 grid grid-cols-3 text-xs md:text-base text-white">
       {/* LEFT/COVER */}
       {/* Show player only if track is defined */}
       <div className={track ? "flex items-center space-x-5" : ""}>
@@ -63,10 +63,10 @@ export default function Player() {
       </div>
       {/* MIDDLE/PLAY-PAUSE */}
       <div>
-      <HiRewind className="" />
-      <HiPlay className="" />
-      <HiPause className="" />
-      <HiFastForward className="" />
+      <HiRewind className="player-icon" />
+      <HiPlay className="player-icon" />
+      <HiPause className="player-icon" />
+      <HiFastForward className="player-icon" />
       </div>
     </div>
   );
