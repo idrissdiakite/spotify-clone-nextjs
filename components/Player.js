@@ -5,6 +5,12 @@ import { useEffect, useState } from "react";
 import { useRecoilState } from "recoil";
 import { useSession } from "next-auth/react";
 import { currentTrackIdState, isPlayingState } from "../atoms/trackAtom";
+import {
+  HiPlay,
+  HiPause,
+  HiRewind,
+  HiFastForward,
+} from "react-icons/hi";
 
 export default function Player() {
   const spotifyApi = useSpotify();
@@ -56,7 +62,12 @@ export default function Player() {
         </div>
       </div>
       {/* MIDDLE/PLAY-PAUSE */}
-
+      <div>
+      <HiRewind className="" />
+      <HiPlay className="" />
+      <HiPause className="" />
+      <HiFastForward className="" />
+      </div>
     </div>
   );
 }
