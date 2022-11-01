@@ -38,10 +38,10 @@ export default function Player() {
   // }, [currentTrackId, spotifyApi, session]);
 
   return (
-    <div>
+    <div className="bg-gradient-to-b from-black to-gray-900 h-35 p-5 text-white">
       {/* LEFT/COVER */}
       {/* Show player only if track is defined */}
-      <div className={track ? "flex items-center space-x-5 bg-gradient-to-b from-black to-gray-900 h-35 p-5 text-white" : ""}>
+      <div className={track ? "flex items-center space-x-5" : ""}>
         <Image
           className="hidden md:inline w-10 h-10"
           src={cover}
