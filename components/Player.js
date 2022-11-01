@@ -40,7 +40,8 @@ export default function Player() {
   return (
     <div>
       {/* Cover */}
-      <div className="flex items-center space-x-5 bg-gradient-to-b from-black to-gray-900 h-35 p-5 text-white">
+      {/* Show player only if track is defined */}
+      <div className={track ? "flex items-center space-x-5 bg-gradient-to-b from-black to-gray-900 h-35 p-5 text-white" : ""}>
         <Image
           className="hidden md:inline w-10 h-10"
           src={cover}
