@@ -18,24 +18,24 @@ export default function Player() {
   const cover = track?.album.images?.[0]?.url;
   console.log("Track id: ", track);
 
-  const fetchCurrentTrack = () => {
-    if (!track) {
-      spotifyApi.getMyCurrentPlayingTrack().then((data) => {
-        setCurrentTrackId(data.body?.item?.id);
+  // const fetchCurrentTrack = () => {
+  //   if (!track) {
+  //     spotifyApi.getMyCurrentPlayingTrack().then((data) => {
+  //       setCurrentTrackId(data.body?.item?.id);
 
-        spotifyApi.getMyCurrentPlaybackState().then((data) => {
-          setIsPlaying(data.body?.is_playing);
-        });
-      });
-    }
-  };
+  //       spotifyApi.getMyCurrentPlaybackState().then((data) => {
+  //         setIsPlaying(data.body?.is_playing);
+  //       });
+  //     });
+  //   }
+  // };
 
-  useEffect(() => {
-    if (spotifyApi.getAccessToken() && !currentTrackId) {
-      fetchCurrentTrack();
-      setVolume(50);
-    }
-  }, [currentTrackId, spotifyApi, session]);
+  // useEffect(() => {
+  //   if (spotifyApi.getAccessToken() && !currentTrackId) {
+  //     fetchCurrentTrack();
+  //     setVolume(50);
+  //   }
+  // }, [currentTrackId, spotifyApi, session]);
 
   return (
     <div>
