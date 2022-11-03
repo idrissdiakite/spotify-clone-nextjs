@@ -18,7 +18,7 @@ export default function Song({ order, track }) { // get order and track from com
 
 
   return (
-    <div onClick={playTrack} className="grid grid-cols-2 text-gray-400 hover:text-white hover:bg-gray-900 py-4 px-5 cursor-pointer">
+    <div onClick={playTrack} className="grid grid-cols-2 text-gray-400 hover:text-white hover:bg-gray-900 py-4 px-2 pr-3 cursor-pointer">
       <div className="flex items-center space-x-4">
         <p className="mr-4">{order + 1}</p>
         <Image
