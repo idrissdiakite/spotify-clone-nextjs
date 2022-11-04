@@ -48,8 +48,7 @@ export default function Content() {
     <div className="flex-grow text-s lg:text-sm h-screen overflow-y-scroll">
       <header className="absolute top-5 right-8">
         <div
-          onClick={signOut}
-          className="flex items-center bg-black text-white space-x-3 opacity-90 hover:opacity-80 cursor-pointer rounded-full p-1 pr-2"
+          className="peer flex items-center bg-black text-white space-x-3 opacity-90 hover:opacity-80 cursor-pointer rounded-full p-1 pr-2"
         >
           <Image
             className="rounded-full w-10 h-10"
@@ -61,6 +60,9 @@ export default function Content() {
           />
           <h2>{session?.user.name}</h2>
           <HiChevronDown className="h-6 w-6" />
+        </div>
+        <div onClick={signOut} className="hidden peer-hover:flex hover:flex text-white hover:text-red-600 font-bold cursor-pointer p-4">
+            <a className="text-center m-auto" href="#">Déconnexion</a>
         </div>
       </header>
       <section
