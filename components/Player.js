@@ -30,7 +30,6 @@ export default function Player() {
   useEffect(() => {
     if (volume >= 0 && volume < 100) {
       debouncedAdjustVolume(volume);
-      console.log(volume);
     }
   }, [volume]);
 

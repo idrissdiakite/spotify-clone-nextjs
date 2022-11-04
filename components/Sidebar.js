@@ -32,6 +32,17 @@ export default function Sidebar() {
     }
   }, [session, spotifyApi]);
 
+
+  // const getFavTracks = () => {
+  //   spotifyApi
+  //       .getMySavedTracks({limit: 50})
+  //       .then((data) => {
+  //         setFavTracks(data.body);
+  //         console.log(favTracks)
+  //       })
+  //       .catch((err) => console.log("Something went wrong", err));
+  // };
+
   return (
     <div className="hidden md:inline text-gray-400 p-5 text-xs lg:text-sm border-r border-gray-900 overflow-y-scroll scrollbar-hide h-screen min-w-[12rem] lg:min-w-[14rem]hidden pb-36">
       <div className="space-y-3">

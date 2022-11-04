@@ -26,8 +26,8 @@ export default function Content() {
   const spotifyApi = useSpotify();
   const [color, setColor] = useState(null);
   // const [playlistId, setPlaylistId] = useRecoilState(playlistIdState);
-  const playlistId = useRecoilValue(playlistIdState); // Read only version
   const [playlist, setPlaylist] = useRecoilState(playlistState);
+  const playlistId = useRecoilValue(playlistIdState); // Read only version
 
   useEffect(() => {
     // shuffle array of colors and choose one color
@@ -45,7 +45,6 @@ export default function Content() {
         .catch((err) => console.log("Something went wrong", err));
     }
   }, [session, spotifyApi, playlistId, setPlaylist]);
-     // console.log(playlist);
 
   return (
     <div className="flex-grow text-s lg:text-sm h-screen overflow-y-scroll">
