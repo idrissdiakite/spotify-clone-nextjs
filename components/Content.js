@@ -15,7 +15,10 @@ const colors = [
   "from-yellow-500",
   "from-purple-500",
   "from-pink-500",
-  "from-red-500",
+  "from-teal-500",
+  "from-fuchsia-500",
+  "from-sky-500",
+  "from-emerald-500",
 ];
 
 export default function Content() {
