@@ -8,4 +8,4 @@ Création d'un clone Spotify afin d'apprendre/tester NextJs ainsi que me perfect
 
 ## 💫 Demo
 
-Vidéo de démonstration de l'application disponible [ici](https://drive.google.com/file/d/1Q_673CSKpcwyVVyYYu4MuL003FXm2sGJ)
+Vidéo de démonstration de l'application disponible [ici](https://drive.google.com/file/d/1Q_673CSKpcwyVVyYYu4MuL003FXm2sGJ).
