@@ -1,4 +1,4 @@
-# Spotify clone (Nextjs + Tailwind)
+# Spotify clone (Nextjs + Tailwind + Spotify Api + NextAuth)
 
 ![Screenshot](screenshot.png)
 
