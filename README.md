@@ -15,9 +15,9 @@ Il est également possibile de récupérer les musiques au sens propre (.mp3) af
 - uniquement les 30 premières secondes
 - l'entièreté du morceau, à condition d'avoir une clé API et de se connecter au préalable (directement sur le site) à son compte Spotify. 
 
-Pour ce projet, je suis parti sur la 2ème possibilité et ai donc utilisé plusieurs dépendances pour la partie connexion telles que "nextauth" ou bien encore "spotify web api node". Voire notamment les fichiers [...nextauth.js](https://github.com/idrissdiakite/spotify-clone-nextjs/blob/main/pages/api/auth/%5B...nextauth%5D.js) et [login.js](https://github.com/idrissdiakite/spotify-clone-nextjs/blob/main/pages/login.js).
+Pour ce projet, je suis parti sur la 2ème possibilité et ai utilisé plusieurs dépendances notamment pour la partie connexion telles que "nextauth" ou bien encore "spotify web api node". Voire entre autre les fichiers [...nextauth.js](https://github.com/idrissdiakite/spotify-clone-nextjs/blob/main/pages/api/auth/%5B...nextauth%5D.js) et [login.js](https://github.com/idrissdiakite/spotify-clone-nextjs/blob/main/pages/login.js).
 
-J'ai également utilisé la dépendance "recoil" afin de garder en mémoire différents states (au sein de toute l'application) tels que l'id de la track en cours ou bien encore si un morceau est en train de jouer ou non (voir ([trackAtom.js](https://github.com/idrissdiakite/spotify-clone-nextjs/blob/main/atoms/trackAtom.js)).
+J'ai également utilisé la dépendance "recoil" afin de garder en mémoire différents states (au sein de toute l'application) tels que l'id de la track en cours ou bien encore si un morceau est en train de jouer ou non (voir [trackAtom.js](https://github.com/idrissdiakite/spotify-clone-nextjs/blob/main/atoms/trackAtom.js)).
 
 ## 💫 Demo
 
