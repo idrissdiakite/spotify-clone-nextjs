@@ -2,7 +2,7 @@
 
 ![Screenshot](screenshot.png)
 
-Création d'un clone Spotify (basé sur le compte d'[ilovethistrack.com](https://open.spotify.com/user/ilovethistrack.com?si=84c31f245c86476f)) afin d'apprendre/tester le framework NextJs.
+Création d'un clone Spotify (basé sur le compte [ilovethistrack.com](https://open.spotify.com/user/ilovethistrack.com?si=84c31f245c86476f)) afin d'apprendre/tester le framework NextJs.
 
 ## 📍 Contexte
 
